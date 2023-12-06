@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CreatePrescriptionComponent } from './create-prescription/create-prescription.component';
  
@@ -15,4 +15,8 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PrescriptionRoutingModule { }
+export class PrescriptionRoutingModule implements OnInit{
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+}
